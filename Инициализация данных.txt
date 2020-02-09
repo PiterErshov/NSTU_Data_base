@@ -1,0 +1,100 @@
+CREATE TABLE pdb1_piter (
+n_det integer PRIMARY KEY,
+name character(30) NOT NULL,
+town character(30) NOT NULL,
+type_oper character(30) NOT NULL,
+date_oper timestamp without time zone NOT NULL
+)with oids;
+
+CREATE TABLE pdb2_piter (
+n_det integer PRIMARY KEY,
+name character(30) NOT NULL,
+town character(30) NOT NULL,
+type_oper character(30) NOT NULL,
+date_oper timestamp without time zone NOT NULL
+)with oids;
+
+CREATE TABLE pdb3_piter (
+n_det integer PRIMARY KEY,
+name character(30) NOT NULL,
+town character(30) NOT NULL,
+type_oper character(30) NOT NULL,
+date_oper timestamp without time zone NOT NULL
+)with oids;
+
+CREATE TABLE db_level1_piter (
+n_det integer PRIMARY KEY,
+name character(30) NOT NULL,
+town character(30) NOT NULL,
+type_oper character(30) NOT NULL,
+date_oper timestamp without time zone NOT NULL
+)with oids;
+
+CREATE TABLE db_level2_piter (
+n_det integer PRIMARY KEY,
+name character(30) NOT NULL,
+town character(30) NOT NULL,
+type_oper character(30) NOT NULL,
+date_oper timestamp without time zone NOT NULL
+)with oids;
+
+INSERT INTO pdb1_piter(n_det,name,town,type_oper,date_oper) VALUES
+(1,'Труба','Милан','Начальная вставка',date_trunc('second', current_timestamp)),
+(2,'Тромбон','Кейптаун','Начальная вставка',date_trunc('second', current_timestamp)),
+(3,'Фагот','Берлин','Начальная вставка',date_trunc('second', current_timestamp)),
+(4,'Флейта','Иркутск','Начальная вставка',date_trunc('second', current_timestamp)),
+(5,'Флейта','Иркутск','Начальная вставка',date_trunc('second', current_timestamp)),
+(6,'Дудка','Москва','Начальная вставка',date_trunc('second', current_timestamp)),
+(7,'Баян','Пекин','Начальная вставка',date_trunc('second', current_timestamp)),
+(8,'Дудка','Париж','Начальная вставка',date_trunc('second', current_timestamp)),
+(9,'Баян','Волгоград','Начальная вставка',date_trunc('second', current_timestamp)),
+(10,'Гобой','Афины','Начальная вставка',date_trunc('second', current_timestamp));
+
+INSERT INTO pdb2_piter(n_det,name,town,type_oper,date_oper) VALUES
+(1,'Труба','Милан','Начальная вставка',date_trunc('second', current_timestamp)),
+(2,'Тромбон','Кейптаун','Начальная вставка',date_trunc('second', current_timestamp)),
+(3,'Фагот','Берлин','Начальная вставка',date_trunc('second', current_timestamp)),
+(4,'Флейта','Иркутск','Начальная вставка',date_trunc('second', current_timestamp)),
+(5,'Флейта','Иркутск','Начальная вставка',date_trunc('second', current_timestamp)),
+(6,'Дудка','Москва','Начальная вставка',date_trunc('second', current_timestamp)),
+(7,'Баян','Пекин','Начальная вставка',date_trunc('second', current_timestamp)),
+(8,'Дудка','Париж','Начальная вставка',date_trunc('second', current_timestamp)),
+(9,'Баян','Волгоград','Начальная вставка',date_trunc('second', current_timestamp)),
+(10,'Гобой','Афины','Начальная вставка',date_trunc('second', current_timestamp));
+
+INSERT INTO pdb3_piter(n_det,name,town,type_oper,date_oper) VALUES
+(1,'Труба','Милан','Начальная вставка',date_trunc('second', current_timestamp)),
+(2,'Тромбон','Кейптаун','Начальная вставка',date_trunc('second', current_timestamp)),
+(3,'Фагот','Берлин','Начальная вставка',date_trunc('second', current_timestamp)),
+(4,'Флейта','Иркутск','Начальная вставка',date_trunc('second', current_timestamp)),
+(5,'Флейта','Иркутск','Начальная вставка',date_trunc('second', current_timestamp)),
+(6,'Дудка','Москва','Начальная вставка',date_trunc('second', current_timestamp)),
+(7,'Баян','Пекин','Начальная вставка',date_trunc('second', current_timestamp)),
+(8,'Дудка','Париж','Начальная вставка',date_trunc('second', current_timestamp)),
+(9,'Баян','Волгоград','Начальная вставка',date_trunc('second', current_timestamp)),
+(10,'Гобой','Афины','Начальная вставка',date_trunc('second', current_timestamp));
+
+INSERT INTO db_level1_piter(n_det,name,town,type_oper,date_oper) VALUES
+(1,'Труба','Милан','Начальная вставка',date_trunc('second', current_timestamp)),
+(2,'Тромбон','Кейптаун','Начальная вставка',date_trunc('second', current_timestamp)),
+(3,'Фагот','Берлин','Начальная вставка',date_trunc('second', current_timestamp)),
+(4,'Флейта','Иркутск','Начальная вставка',date_trunc('second', current_timestamp)),
+(5,'Флейта','Иркутск','Начальная вставка',date_trunc('second', current_timestamp)),
+(6,'Дудка','Москва','Начальная вставка',date_trunc('second', current_timestamp)),
+(7,'Баян','Пекин','Начальная вставка',date_trunc('second', current_timestamp)),
+(8,'Дудка','Париж','Начальная вставка',date_trunc('second', current_timestamp)),
+(9,'Баян','Волгоград','Начальная вставка',date_trunc('second', current_timestamp)),
+(10,'Гобой','Афины','Начальная вставка',date_trunc('second', current_timestamp));
+
+INSERT INTO db_level2_piter(n_det,name,town,type_oper,date_oper) VALUES
+(1,'Труба','Милан','Начальная вставка',date_trunc('second', current_timestamp)),
+(2,'Тромбон','Кейптаун','Начальная вставка',date_trunc('second', current_timestamp)),
+(3,'Фагот','Берлин','Начальная вставка',date_trunc('second', current_timestamp)),
+(4,'Флейта','Иркутск','Начальная вставка',date_trunc('second', current_timestamp)),
+(5,'Флейта','Иркутск','Начальная вставка',date_trunc('second', current_timestamp)),
+(6,'Дудка','Москва','Начальная вставка',date_trunc('second', current_timestamp)),
+(7,'Баян','Пекин','Начальная вставка',date_trunc('second', current_timestamp)),
+(8,'Дудка','Париж','Начальная вставка',date_trunc('second', current_timestamp)),
+(9,'Баян','Волгоград','Начальная вставка',date_trunc('second', current_timestamp)),
+(10,'Гобой','Афины','Начальная вставка',date_trunc('second', current_timestamp));
+
